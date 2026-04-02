@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PhishingScope</title>
+    <meta
+      name="description"
+      content="PhishingScope analyzes suspicious emails, texts, and URLs for phishing indicators using explainable rule-based logic."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div class="ambient ambient--left" aria-hidden="true"></div>
+      <div class="ambient ambient--right" aria-hidden="true"></div>
+
+      <header class="topbar">
+        <a class="brand" href="#home" aria-label="PhishingScope home">
+          <span class="brand__mark">PS</span>
+          <span class="brand__text">
+            <strong>PHISHINGSCOPE</strong>
+            <small>Explainable phishing triage</small>
+          </span>
+        </a>
+
+        <nav class="nav-links">
+          <a href="#home">Home</a>
+          <a href="#analyzer">Analyzer</a>
+          <a href="#tips">Tips</a>
+        </nav>
+      </header>
+
+      <main>
+        <section class="hero" id="home">
+          <div class="hero__copy">
+            <div class="hero-badge">Explainable phishing detection</div>
+            <div class="hero-kicker">Explainable security analysis for real-world scam awareness</div>
+            <h1>
+              Analyze suspicious messages before they analyze you
+            </h1>
+            <p>
+              PhishingScope helps users detect phishing indicators in emails, texts, and URLs with a
+              clear risk score, explainable findings, and recommended next steps.
+            </p>
+            <div class="hero__actions">
+              <a class="button button--primary" href="#analyzer">Analyze Threat</a>
+              <button class="button button--ghost" id="hero-demo-button" type="button">
+                View Demo Sample
+              </button>
+            </div>
+
+            <div class="stats-grid">
+              <article class="glass-card stat-card stat-card--accent">
+                <strong>Explainable</strong>
+                <span>Every score is tied to visible phishing indicators</span>
+              </article>
+              <article class="glass-card stat-card">
+                <strong>0-100</strong>
+                <span>Deterministic risk scoring for live triage</span>
+              </article>
+              <article class="glass-card stat-card">
+                <strong>Demo-ready</strong>
+                <span>Fast, readable outputs for technical and non-technical users</span>
+              </article>
+            </div>
+          </div>
+
+          <aside class="glass-card spotlight-panel">
+            <div class="spotlight-orb spotlight-orb--blue" aria-hidden="true"></div>
+            <div class="spotlight-orb spotlight-orb--pink" aria-hidden="true"></div>
+            <div class="spotlight-panel__header">
+              <div>
+                <p class="section-label">Threat Snapshot</p>
+                <h2>High-risk banking spoof</h2>
+              </div>
+              <span class="score-pill score-pill--high">82 / 100</span>
+            </div>
+
+            <div class="snapshot-box">
+              <p class="snapshot-box__label">Detected red flags</p>
+              <div class="badge-row">
+                <span class="mini-badge mini-badge--high">Urgent language</span>
+                <span class="mini-badge mini-badge--high">Credential request</span>
+                <span class="mini-badge mini-badge--high">Brand spoof</span>
+                <span class="mini-badge mini-badge--high">Suspicious URL</span>
+                <span class="mini-badge mini-badge--high">Account verification pressure</span>
+              </div>
+            </div>
+
+            <div class="snapshot-grid">
+              <article class="snapshot-box">
+                <p class="snapshot-box__label">Explanation</p>
+                <p>
+                  The message pressures the user to act immediately, asks for login details, and
+                  uses a lookalike domain unrelated to the claimed bank.
+                </p>
+              </article>
+              <article class="snapshot-box">
+                <p class="snapshot-box__label">Next action</p>
+                <p>
+                  Do not click or reply. Verify through the official bank website or app and
+                  report the message.
+                </p>
+              </article>
+            </div>
+          </aside>
+        </section>
+
+        <section class="features" id="features">
+          <div class="section-heading">
+            <p class="section-label">Why it works</p>
+            <h2>Built like a practical security tool</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="glass-card feature-card">
+              <div class="feature-icon">01</div>
+              <h3>Explainable scoring</h3>
+              <p>Every risk point maps to a specific phishing signal instead of a black-box guess.</p>
+            </article>
+            <article class="glass-card feature-card">
+              <div class="feature-icon">02</div>
+              <h3>Message plus link triage</h3>
+              <p>Inspect suspicious text and URLs together for stronger context and clearer findings.</p>
+            </article>
+            <article class="glass-card feature-card">
+              <div class="feature-icon">03</div>
+              <h3>Action-ready output</h3>
+              <p>Get a verdict, confidence level, plain-English explanation, and recommended next action.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="workspace" id="analyzer">
+          <div class="section-heading">
+            <p class="section-label">Analyzer Console</p>
+            <h2>Triage suspicious content with explainable phishing indicators</h2>
+            <p>
+              Paste a suspicious email or text, add a suspicious URL if there is one, and inspect
+              the phishing signals that drive the result.
+            </p>
+          </div>
+
+          <div class="workspace-grid">
+            <div class="main-column">
+              <section class="glass-card compose-card">
+                <div class="compose-card__header">
+                  <div>
+                    <p class="section-label">Live Triage</p>
+                    <h3>Analyze a suspicious message</h3>
+                    <p class="section-subcopy">
+                      Paste suspicious content, inspect the linked destination, and generate a fast
+                      phishing assessment.
+                    </p>
+                  </div>
+                  <div class="action-row">
+                    <button class="button button--ghost" id="copy-button" type="button" disabled>
+                      Copy Result
+                    </button>
+                    <button class="button button--ghost" id="export-button" type="button" disabled>
+                      Export JSON
+                    </button>
+                  </div>
+                </div>
+
+                <label class="field">
+                  <span>Suspicious email or text</span>
+                  <textarea
+                    id="message-input"
+                    rows="10"
+                    placeholder="Paste a suspicious email, text, or message here..."
+                  ></textarea>
+                </label>
+
+                <label class="field">
+                  <span>Suspicious URL</span>
+                  <input
+                    id="url-input"
+                    type="text"
+                    placeholder="Paste a suspicious link here..."
+                  />
+                </label>
+
+                <div class="action-row">
+                  <button class="button button--primary" id="analyze-button" type="button">
+                    Analyze Threat
+                  </button>
+                  <button class="button button--ghost" id="demo-button" type="button">
+                    Load Demo Sample
+                  </button>
+                  <button class="button button--ghost" id="reset-button" type="button">Reset</button>
+                </div>
+              </section>
+
+              <div class="results-grid">
+                <section class="glass-card gauge-card scanner">
+                  <p class="section-label">Threat Telemetry</p>
+                  <div class="threat-banner" id="threat-banner">THREAT LEVEL: LOW RISK</div>
+                  <p class="gauge-subtitle" id="indicator-count-text">Analysis complete — 0 indicators detected</p>
+                  <div class="gauge-wrap">
+                    <div class="gauge">
+                      <div class="gauge__outer"></div>
+                      <div class="gauge__inner"></div>
+                      <div class="gauge__needle" id="gauge-needle"></div>
+                      <div class="gauge__scale">
+                        <span>0</span>
+                        <span>50</span>
+                        <span>100</span>
+                      </div>
+                      <div class="gauge__readout">
+                        <strong id="score-value">0</strong>
+                        <span id="verdict-text" class="verdict verdict--low">Low Risk</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="confidence-panel">
+                    <span class="confidence-label">Confidence Level</span>
+                    <span class="confidence-pill confidence-pill--low" id="confidence-text">Low</span>
+                  </div>
+                  <p class="signal-summary signal-summary--low" id="signal-summary-text">
+                    No strong phishing indicators detected
+                  </p>
+                </section>
+
+                <section class="glass-card summary-card" id="summary-card">
+                  <p class="section-label">Analyst Summary</p>
+                  <p class="section-subcopy summary-intro">
+                    PhishingScope translates technical phishing signals into a direct, human-readable
+                    assessment.
+                  </p>
+                  <div class="loading-shell" id="loading-shell" hidden>
+                    <span class="spinner" aria-hidden="true"></span>
+                    <span>Scanning message signals...</span>
+                  </div>
+
+                  <article class="summary-box fade-panel" id="explanation-panel">
+                    <h3>Plain-English explanation</h3>
+                    <p id="explanation-text">
+                      Run an analysis to see why the content looks suspicious or relatively safe.
+                    </p>
+                  </article>
+
+                  <article class="summary-box">
+                    <h3>Recommended next action</h3>
+                    <p id="next-action-text">
+                      PhishingScope will suggest a practical next step based on the detected risk.
+                    </p>
+                  </article>
+
+                  <article class="summary-box fade-panel" id="confidence-panel-card">
+                    <h3>Confidence Level</h3>
+                    <p id="confidence-summary-text">
+                      Confidence increases when multiple strong indicators point to the same phishing pattern.
+                    </p>
+                  </article>
+                </section>
+              </div>
+
+              <section class="glass-card indicators-card">
+                <div class="indicators-card__header">
+                  <div>
+                    <p class="section-label">Detected Indicators</p>
+                    <h3 id="indicator-heading">Run an analysis to see findings</h3>
+                    <p class="section-subcopy indicators-subcopy">
+                      Each finding adds to the score and explains which phishing behavior was detected.
+                    </p>
+                  </div>
+                  <span class="rule-chip">Rule-based detection</span>
+                </div>
+
+                <div class="indicator-list" id="indicator-list">
+                  <div class="empty-state">
+                    PhishingScope checks for urgency, credential requests, payment pressure,
+                    suspicious links, brand spoofing, impersonation patterns, and other common
+                    scam behavior.
+                  </div>
+                </div>
+              </section>
+            </div>
+
+            <aside class="sidebar-column">
+              <section class="glass-card sidebar-card">
+                <p class="section-label">Sample Threats</p>
+                <div class="sample-list" id="sample-list"></div>
+              </section>
+
+              <section class="glass-card sidebar-card" id="tips">
+                <p class="section-label">Security Tips</p>
+                <div class="tips-list" id="tips-list"></div>
+              </section>
+
+              <section class="glass-card sidebar-card">
+                <p class="section-label">Why It Matters</p>
+                <div class="tips-list" id="trust-list"></div>
+              </section>
+
+              <section class="glass-card sidebar-card">
+                <p class="section-label">Coming Soon</p>
+                <div class="upload-placeholder">
+                  <h3>Screenshot and OCR intake</h3>
+                  <p>
+                    Future roadmap: analyze screenshots of fake login pages, mobile scam texts, and
+                    suspicious checkout prompts using OCR and image-based threat review.
+                  </p>
+                  <div class="upload-box">Drag and drop area coming soon</div>
+                </div>
+              </section>
+            </aside>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p>Built by Lilyan Hermes</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
