@@ -12,7 +12,7 @@ Real-time phishing detection Chrome extension with explainable risk analysis.
 ## 📸 Screenshots
 
 ### Extension Interface
-![Main UI](./screenshots/main-ui.png)
+[![Main UI](./screenshots/main-ui.png)](https://github.com/LilyanHermes/phishscope/blob/main/main-ui.png)
 
 ### Threat Detection
 ![Threat Detection](./screenshots/threat-detection.png)
