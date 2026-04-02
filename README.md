@@ -10,12 +10,10 @@ Real-time phishing detection Chrome extension with explainable risk analysis.
 - Clean, modern UI with cybersecurity-focused design
 
 ## 📸 Screenshots
-
-### Extension Interface
-![Main UI](main-ui.png)
-
-### Threat Detection
-![Threat Detection](threat-detection.png)
+<p align="center">
+  <img src="main-ui.png" width="45%" />
+  <img src="threat-detection.png" width="45%" />
+</p>
 
 ## 🚀 How It Works
 PhishingScope analyzes the current webpage for common phishing indicators and assigns a risk score based on detected patterns.
